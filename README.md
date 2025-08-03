@@ -28,32 +28,14 @@ The dataset includes 11 physicochemical attributes:
 - Alcohol
 
 ## Folder Structure
-├── app.py # Flask app
-├── model_training.py # ML model training script
-├── model.pkl # Trained model file
-├── templates/ # HTML files
-├── static/ # CSS and image files
-├── requirements.txt # Python dependencies
-├── README.md
+- app.py # Flask app
+- model_training.py # ML model training script
+- model.pkl # Trained model file
+- templates/ # HTML files
+- static/ # CSS and image files
+- requirements.txt # Python dependencies
+- README.md
 
-
-## Getting Started
-
-1. Clone the repository  
-   `git clone https://github.com/ssdasari777/Red-Wine-Quality-Prediction-Using-Machine-Learning.git`
-
-2. Install required libraries  
-   `pip install -r requirements.txt`
-
-3. Run the Flask app  
-   `python app.py`
-
-4. Open the browser and go to  
-   `http://127.0.0.1:5000`
-
-## Screenshot
-
-(Insert a screenshot of your web app here, e.g., `wine.jpg` or `thumb_up.jpg`)
 
 ## Future Improvements
 
