@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static',filename='submit.css') }}">
+</head>
+<body>
+<h1> Prediction of your sample</h1>
+{% if result == 1 %}
+<img src="{{url_for('static', filename='good.jpeg')}}" class="center">
+<h2 id="goodtext">Good Wine</h2>
+<button onclick="redirectgood()" id="good">Back</button>
+{% else %}
+<img src="{{url_for('static', filename='bad(1).jpeg')}}" id="center2">
+<h2 id="badtext">Bad Wine</h2>
+<button onclick="redirectbad()" id="down">Back</button>
+{% endif %}
+</body>
+<script>
+   function redirectgood(){
+
+    window.location.href = "{{ url_for('formsg') }}";
+   }
+
+   function redirectbad(){
+    window.location.href = "{{ url_for('formsg') }}";
+   }
+</script>
+</html>
